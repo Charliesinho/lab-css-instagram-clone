@@ -3,8 +3,97 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
+.bold {
+  font-weight: bold;
+}
+.grey {
+  color:#b9b9b9;
+  font-weight: 700;
+}
 
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+}
+section {
+display: flex;
+flex-direction: row-reverse;
+padding: 100px 60px 0px 60px;
+background-image: linear-gradient(#628eb5, #396388);
+background-size: 100% 45%;
+background-repeat: no-repeat;
+
+}
+section > div:first-child {
+  padding: 0 0 0 50px;
+  
+}
+section > div:first-child > div:last-child {
+  display: block;
+  text-align: justify;
+  box-shadow: 0px -5px 6px rgba(0, 0, 0, 0.141);
+  padding: 5px 50px 40px 45px;
+  border-radius: 5px;
+  background-color: white;
+}
+section > div:first-child > div:last-child > div:last-child {
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+section h3 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #06365f;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.138);
+}
+h3 + div {
+  font-size: 15px;
+  font-weight: 500;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.138);
+}
+section > div:first-child > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  
+  align-items: center;
+}
+section > div:first-child > div:first-child > div:first-child img {
+height: 75px;
+}
+section > div:first-child > div:first-child > div:last-child img {
+  height: 20px;
+  }
+section > div:first-child > div:first-child > div:last-child {
+background-image: linear-gradient(#89b3da,#628eb5, #4c779c);
+text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.303);
+height: 40px;
+width:100px;
+border-radius: 3px;
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.665);
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-size: 14px;
+font-weight: bold;
+gap: 13px;
+padding: 0 7px 0 0;
+}
+
+footer div ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 19px;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+footer div ul li a {
+  color: #447bab;
+  font-weight: 700;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.138);
 }
